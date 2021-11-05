@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B0C4DB0E-9A6B-42A9-BAAD-DE03A35599F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.ApplicationCore", "Src\ApplicationCore\KikiShop.ApplicationCore\KikiShop.ApplicationCore.csproj", "{972FDA42-C5C3-4964-9DB3-4F67A2886C5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KikiShop.Domain", "KikiShop.Domain", "{BE9A66E8-D06D-40AA-9E9D-668E882A8736}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Domain", "Src\Domain\KikiShop.Domain\KikiShop.Domain.csproj", "{FAD81BBA-B246-4198-AF5D-F38D63A39B16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Seed", "Src\Doamin.Seed\KikiShop.Seed\KikiShop.Seed.csproj", "{ACF90560-32E1-42E4-BFDF-F84180FDAA98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9F2993F7-10CB-41CC-AE32-D25A67BE6419}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Infrastructure", "Src\Infrastructure\KikiShop.Infrastructure\KikiShop.Infrastructure.csproj", "{DA414A65-F8B3-486D-89A6-530A9591B762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{C80095FE-BC89-4A3C-A8B9-BE7DEB049AA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Helper", "Src\Helper\KikiShop.Helper\KikiShop.Helper.csproj", "{5497FA96-E706-497C-92B4-D605AD25A6A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Infrastructure.DataSeed", "Src\DataSeed\KikiShop.Infrastructure.DataSeed\KikiShop.Infrastructure.DataSeed.csproj", "{61758190-8C67-417A-8F2F-D212E697F535}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KikiShop.Infrastructure.Ioc", "Src\Infrastructure\Ioc\KikiShop.Infrastructure.Ioc\KikiShop.Infrastructure.Ioc.csproj", "{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{E06AEB74-ED93-46EF-BBE1-1285955B765A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KikiShop.API", "Src\Presentation Layer\API\KikiShop.API\KikiShop.API.csproj", "{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{972FDA42-C5C3-4964-9DB3-4F67A2886C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972FDA42-C5C3-4964-9DB3-4F67A2886C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972FDA42-C5C3-4964-9DB3-4F67A2886C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972FDA42-C5C3-4964-9DB3-4F67A2886C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD81BBA-B246-4198-AF5D-F38D63A39B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD81BBA-B246-4198-AF5D-F38D63A39B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD81BBA-B246-4198-AF5D-F38D63A39B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD81BBA-B246-4198-AF5D-F38D63A39B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF90560-32E1-42E4-BFDF-F84180FDAA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF90560-32E1-42E4-BFDF-F84180FDAA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF90560-32E1-42E4-BFDF-F84180FDAA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF90560-32E1-42E4-BFDF-F84180FDAA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA414A65-F8B3-486D-89A6-530A9591B762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA414A65-F8B3-486D-89A6-530A9591B762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA414A65-F8B3-486D-89A6-530A9591B762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA414A65-F8B3-486D-89A6-530A9591B762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5497FA96-E706-497C-92B4-D605AD25A6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5497FA96-E706-497C-92B4-D605AD25A6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5497FA96-E706-497C-92B4-D605AD25A6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5497FA96-E706-497C-92B4-D605AD25A6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61758190-8C67-417A-8F2F-D212E697F535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61758190-8C67-417A-8F2F-D212E697F535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61758190-8C67-417A-8F2F-D212E697F535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61758190-8C67-417A-8F2F-D212E697F535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{972FDA42-C5C3-4964-9DB3-4F67A2886C5E} = {B0C4DB0E-9A6B-42A9-BAAD-DE03A35599F5}
+		{FAD81BBA-B246-4198-AF5D-F38D63A39B16} = {BE9A66E8-D06D-40AA-9E9D-668E882A8736}
+		{ACF90560-32E1-42E4-BFDF-F84180FDAA98} = {BE9A66E8-D06D-40AA-9E9D-668E882A8736}
+		{DA414A65-F8B3-486D-89A6-530A9591B762} = {9F2993F7-10CB-41CC-AE32-D25A67BE6419}
+		{5497FA96-E706-497C-92B4-D605AD25A6A7} = {C80095FE-BC89-4A3C-A8B9-BE7DEB049AA1}
+		{61758190-8C67-417A-8F2F-D212E697F535} = {9F2993F7-10CB-41CC-AE32-D25A67BE6419}
+		{79D30AF8-3A4E-4BA1-9B8D-0AA5B99EB491} = {9F2993F7-10CB-41CC-AE32-D25A67BE6419}
+		{BD97B6F3-AC4C-4E95-9ECD-6A09AE6D05D5} = {E06AEB74-ED93-46EF-BBE1-1285955B765A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEA7077B-1AB8-41FE-908A-6959C286ABF3}
+	EndGlobalSection
+EndGlobal
