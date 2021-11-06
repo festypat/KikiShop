@@ -1,11 +1,6 @@
 ﻿using KikiShop.Domain.Merchants;
 using KikiShop.Seed.Events;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KikiShop.Infrastructure.KikiShop.Database.Context
 {

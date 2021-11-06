@@ -4,17 +4,14 @@ using KikiShop.Infrastructure.Events;
 using KikiShop.Infrastructure.KikiShop.Database.Context;
 using KikiShop.Seed;
 using KikiShop.Seed.Events;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace KikiShop.Infrastructure.KikiShop.Database.Domain
 {
-   
+
     public class KikiShopUnitOfWork : UnitOfWork<KikiShopDbContext>, IKikiShopUnitOfWork
     {
         public IMerchants Merchants { get; }        

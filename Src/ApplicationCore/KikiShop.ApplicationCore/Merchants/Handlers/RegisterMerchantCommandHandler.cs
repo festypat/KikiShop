@@ -5,16 +5,13 @@ using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.User;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace KikiShop.ApplicationCore.Merchants.Handlers
 {
-   
+
     public class RegisterMerchantCommandHandler : CommandHandler<RegisterMerchantCommand, Guid>
     {
         private readonly IKikiShopUnitOfWork _unitOfWork;

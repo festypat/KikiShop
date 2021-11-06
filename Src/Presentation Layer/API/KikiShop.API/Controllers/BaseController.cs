@@ -1,11 +1,8 @@
 ﻿using KikiShop.ApplicationCore.Core.QueryHandling;
 using KikiShop.ApplicationCore.Merchants.Command;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace KikiShop.API.Controllers

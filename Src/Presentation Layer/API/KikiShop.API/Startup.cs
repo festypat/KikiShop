@@ -1,20 +1,11 @@
 using KikiShop.API.Configurations;
-using KikiShop.ApplicationCore.Merchants.Command;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 
 namespace KikiShop.API
 {
@@ -58,8 +49,7 @@ namespace KikiShop.API
             services.AddMediatR(typeof(Startup));
 
             services.AddAutoMapperSetup();
-
-            //services.AddMediatR(typeof(ICommandHandlerResult).GetTypeInfo().Assembly);
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

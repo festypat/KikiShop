@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KikiShop.Domain.Merchants
+﻿namespace KikiShop.Domain.Merchants
 {
-   
+
     public interface IMerchantUniquenessChecker
     {
         bool IsUserUnique(string customerEmail);

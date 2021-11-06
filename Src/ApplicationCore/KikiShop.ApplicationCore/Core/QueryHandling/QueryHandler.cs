@@ -1,8 +1,5 @@
 ﻿using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,12 +8,7 @@ namespace KikiShop.ApplicationCore.Core.QueryHandling
     public interface IQueryHandler<in TQuery, TResult> : IRequestHandler<TQuery, TResult>
        where TQuery : IQuery<TResult>
     { }
-
-    /// <summary>
-    /// Abstract class to be inherited by Query Handlers
-    /// </summary>
-    /// <typeparam name="TQuery"></typeparam>
-    /// <typeparam name="TResult"></typeparam>
+  
     public abstract class QueryHandler<TQuery, TResult> : IQueryHandler<TQuery, QueryHandlerResult<TResult>>
         where TQuery : IQuery<QueryHandlerResult<TResult>>
     {

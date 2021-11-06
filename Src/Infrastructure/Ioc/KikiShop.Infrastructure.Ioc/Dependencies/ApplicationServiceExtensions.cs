@@ -7,10 +7,6 @@ using KikiShop.Infrastructure.KikiShop.Database.Domain.Merchants;
 using KikiShop.Seed.Events;
 //using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Reflection;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -26,7 +22,7 @@ using KikiShop.ApplicationCore.Merchants.Command;
 
 namespace KikiShop.Infrastructure.Ioc.Dependencies
 {
-  
+
     public static class ApplicationServiceExtensions
     {
         public static void RegisterServices(this IServiceCollection services)

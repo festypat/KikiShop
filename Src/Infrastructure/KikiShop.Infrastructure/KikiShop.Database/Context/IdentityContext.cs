@@ -1,13 +1,8 @@
-﻿using KikiShop.Infrastructure.KikiShop.Database.UserIdentity;
-using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.AppRoles;
+﻿using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.AppRoles;
 using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.User;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KikiShop.Infrastructure.KikiShop.Database.Context
 {
