@@ -19,6 +19,10 @@ using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.User;
 using KikiShop.Infrastructure.KikiShop.Database.UserIdentity.Jwt;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Http;
+using KikiShop.ApplicationCore.AutoMapperSettings;
+using KikiShop.Infrastructure.Publisher;
+using KikiShop.Infrastructure.Processor;
+using KikiShop.ApplicationCore.Merchants.Command;
 
 namespace KikiShop.Infrastructure.Ioc.Dependencies
 {
@@ -38,12 +42,15 @@ namespace KikiShop.Infrastructure.Ioc.Dependencies
             // Infra - Domain persistence
             services.AddScoped<IKikiShopUnitOfWork, KikiShopUnitOfWork>();
             services.AddScoped<IMerchants, Merchants>();
-           
+
+            services.AddAutoMapper(typeof(MappingProfiles));
+
+            //services.AddSingleton<IRequestHandler<RegisterMerchantCommand, Guid>, RegisterMerchantCommandHandler>();
 
             // Infrastructure - Data EventSourcing
             services.AddScoped<IStoredEvents, StoredEvents>();
             services.AddSingleton<IEventSerializer, EventSerializer>();
-
+            services.AddScoped<RegisterMerchantCommand>();
             // Infrastructure - Identity     
             services.AddTransient<IAuthorizationHandler, ClaimsRequirementHandler>();
             services.AddTransient<IApplicationUserDbAccessor, ApplicationUserDbAccessor>();
@@ -52,8 +59,8 @@ namespace KikiShop.Infrastructure.Ioc.Dependencies
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             // Messaging
-            //services.AddScoped<IMessagePublisher, MessagePublisher>();
-            //services.AddScoped<IMessageProcessor, MessageProcessor>();
+            services.AddScoped<IMessagePublisher, MessagePublisher>();
+            services.AddScoped<IMessageProcessor, MessageProcessor>();
         }
     }
 

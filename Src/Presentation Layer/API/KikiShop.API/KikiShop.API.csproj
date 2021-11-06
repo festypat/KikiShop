@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\ApplicationCore\KikiShop.ApplicationCore\KikiShop.ApplicationCore.csproj" />
     <ProjectReference Include="..\..\..\Helper\KikiShop.Helper\KikiShop.Helper.csproj" />
+    <ProjectReference Include="..\..\..\Infrastructure\Ioc\KikiShop.Infrastructure.Ioc\KikiShop.Infrastructure.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

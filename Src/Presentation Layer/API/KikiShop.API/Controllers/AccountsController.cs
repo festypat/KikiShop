@@ -27,7 +27,7 @@ namespace KikiShop.API.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost, Route("register")]
+        [HttpPost, Route("register-merchant")]
         [ProducesResponseType(typeof(Guid), (int)HttpStatusCode.Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Register([FromBody] CreateMerchantRequest request)

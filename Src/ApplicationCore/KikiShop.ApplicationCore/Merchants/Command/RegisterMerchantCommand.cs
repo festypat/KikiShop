@@ -44,7 +44,7 @@ namespace KikiShop.ApplicationCore.Merchants.Command
             .Length(2, 100).WithMessage("The Name must have between 2 and 100 characters.");
 
             RuleFor(x => x.Password).NotEmpty().WithMessage("Password is empty.");
-            RuleFor(x => x.PasswordConfirm).NotEmpty().WithMessage("PasswordConfirm is empty.");
+            RuleFor(x => x.PasswordConfirm).NotEmpty().WithMessage("Password Confirm is empty.");
         }
     }
 }
